@@ -5,34 +5,36 @@
     box-sizing: border-box;
 }
 
-
-/* DEBUG */
-.bord{
-    border: 1px solid black;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-.star-text{
-    /* DEBUG */
-    width: 500px;
-    height: 50px;
-}
 
-.title{
-    /* DEBUG */
-    height: 50px;
-}
 
 
 /* header */
-.header_topbar{
+.ms_header_topbar{
     background-color: #2c3e50;
-    /* DEBUG */
-    height: 100px;
+    height: 100%;
+    color: white;
+    
 }
 
-.ms_col_header{
-    /* DEBUG */
-    height: 50px;
+.hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
 }
 
 
@@ -40,129 +42,186 @@
 
 /* main */
 /* jumbotron section */
-.jumbo{
+.ms_jumbo{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #1abc9c;
+    height: 100%;
+    color: white;
     /* DEBUG */
     height: 600px;
 }
 
-.logo_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.logo{
+.ms_logo{
     border-radius: 50%;
+    position: relative;
     /* DEBUG */
     height: 250px;
     width: 250px;
 }
 
-.title-jumbo{
+.ms_logo img{
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ms_star-text{
+    /* DEBUG */
+    height: 50px;
+    font-size: 30px;
+}
+
+.line{
+    width: 100px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 30px;
+    border: none;
+}
+
+.ms_star-text:first-child{
+    margin-right: 20px;
+}
+
+.ms_star-text:last-child{
+    margin-left: 20px;
+}
+
+.ms_info-freelencer{
+    font-size: 25px;
     /* DEBUG */
     height: 50px;
 }
 
-.info-freelencer{
-    /* DEBUG */
-    height: 50px;
-}
+
 
 
 /* portfolio seciton */
-.portfolio{
+.ms_portfolio{
     display: flex;
     align-items: center;
+    height: 100%;
+    padding-top: 40px;
+    color: black;
     /* DEBUG */
-    height: 850px;
+    /* height: 850px; */
 }
 
-.title-portfolio{
+.ms_title-portfolio{
     /* DEBUG */
     height: 50px;
 }
 
-.cards{
+.ms_cards{
     border-radius: 30px;
     /* DEBUG */
-    background-color: yellow;
-    height: 250px;
+    /* height: 300px; */
+}
+
+.ms_cards img{
+    width: 100%;
+    border-radius: 30px;
 }
 
 
 /* about section */
-.about{
+.ms_about{
     display: flex;
     align-items: center;
+    height: 100%;
+    padding: 40px;
     background-color: #1abc9c;
+    color: white;
     /* DEBUG */
-    height: 500px;
+    /* height: 500px; */
 }
 
-.text_col_about{
+.ms_text_col_about{
+    font-size: 20px;
+    text-align: start;
     /* DEBUG */
-    background-color: yellow;
     height: 150px;
 }
 
-.btn_download{
-    /* DEBUG */
+.ms_btn_download{
+    background-color: #1abc9c;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
     height: 50px;
 }
 
 
 /* contact */
-.contact{
+.ms_contact{
     display: flex;
     align-items: center;
     /* DEBUG */
     height: 850px;
 }
 
-.contact_info{
+.ms_contact_info{
+    font-size: 20px;
+    text-align: start;
     /* DEBUG */
     height: 50px;
 }
 
-#hr-mes{
+#ms_hr-mes{
     margin-top: 200px;
 }
 
-.send_bg{
+.ms_button_send{
     background-color: #1abc9c;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
 }
-
-
 
 
 /* footer */
 /* footer topbar */
-.footer_topbar{
+.ms_footer_topbar{
     display: flex;
     align-items: center;
+    height: 100%;
     background-color: #3a546d;
-    height: 250px;
+    padding: 40px 0;
 }
 
-.cards-footer{
-    background-color: yellow;
+.ms_cards-footer{
+    font-size: 25px;
+    color: white;
     /* DEBUG */
     height: 150px;
 }
 
-/* footer bottombar */
-.footer_bottombar{
-    display: flex;
-    align-items: center;
-    background-color: #2c3e50;
-    height: 100px;
+.footer_icon{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
 }
 
-.text_footer{
+/* footer bottombar */
+.ms_footer_bottombar{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #2c3e50;
+    padding-top: 40px;
+    /* DEBUG */
+    /* height: 100px; */
+}
+
+.ms_text_footer{
     /* DEBUG */
     height: 50px;
 }
